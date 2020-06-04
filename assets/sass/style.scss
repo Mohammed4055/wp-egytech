@@ -1,0 +1,150 @@
+/*some vars*/
+$dark:#000;
+$light:#fff;
+$gray:#ddd;
+$red:#e74c3c;
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.desginerinfo{
+  background-color: #23282d;
+  color: #a6a6a6;
+  font-size: 12px;
+  i{
+    margin: 10px;
+  }
+}
+
+.brand{
+  padding: 10px 0;
+  a{
+    color: $red;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  .sub-brand{
+      color:$gray;
+  }
+}
+/*********************************************start navbar*********************************************/
+nav{
+  background-color:$dark;
+  
+}
+/*********************************************start footer*********************************************/
+.footer-dark{
+  padding: 50px 0;
+  color: $light;
+  background-color: $dark;
+  h3{
+      margin-top: 0;
+      font-weight: bold;
+      font-size: 16px;
+  }
+  ul{
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 0;
+    a{
+      color: $gray;
+      text-decoration: none;
+      &:hover{
+          color:$red;
+      }
+    }
+  }
+  .item.social >a {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.4);
+    margin: 0 8px;
+    color: $light;
+    opacity: 0.75;
+    &:hover{
+      opacity: 0.9;
+    }
+  }
+  .copyright {
+    text-align: center;
+    padding-top: 24px;
+    opacity: 0.3;
+    font-size: 13px;
+    margin-bottom: 0;
+    pointer-events: none;
+  }
+  .contactus h3{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .aboutus{
+  margin-bottom: 25px;
+  }
+}
+/*********************************************start contact form*********************************************/
+.contactform{
+  margin-bottom: 50px;
+}
+.name,.email, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid $gray;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: $gray;
+  color: $dark;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/*********************************************end contact form*********************************************/
+
+/*********************************************end footer*********************************************/
+
+/*********************************************start media*********************************************/
+@media (max-width:767px) {
+  .footer-dark .item:not(.social) {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom: 0;
+  }
+}
+.footer-dark .item.text p {
+  opacity: 0.6;
+  margin-bottom: 0;
+}
+.footer-dark .item.social {
+  text-align: center;
+}
+@media (max-width:991px) {
+  .footer-dark .item.social {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+/*********************************************end media*********************************************/
